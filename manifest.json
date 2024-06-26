@@ -1,1 +1,20 @@
-ECHO est  ativado.
+{
+    "manifest_version": 2,
+    "name": "Linkedin Adblocker",
+    "description": "Blockind ads.",
+    "version": "0.0.1",
+    "author": "Henrique Jambu",
+    "browser_action": {
+        "default_title": "Linkedin Adblocker"
+    },
+    "permissions": [
+        "tabs",
+        "webNavigation",
+        "https://linkedin.com/"
+    ],
+    "background": {
+        "scripts": [
+            "extension.js"
+        ]
+    }
+}
