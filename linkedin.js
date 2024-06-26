@@ -3,7 +3,7 @@ function removedAds() {
     let spans = document.getElementsByTagName("span");
 
     for (let i = 0; i < spans.length; ++i) {
-        if (spans[i].innerHTML === "Promoted") {
+        if (spans[i].innerHTML === "Patrocinado") {
             let card = spans[i].closest(".feed-shared-update-v2");
 
             if (card === null) {
