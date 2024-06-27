@@ -1,10 +1,10 @@
 {
-    "manifest_version": 2,
+    "manifest_version": 3,
     "name": "Linkedin Adblocker",
     "description": "Blockind ads.",
     "version": "0.0.1",
     "author": "Henrique Jambu",
-    "browser_action": {
+    "action": {
         "default_title": "Linkedin Adblocker"
     },
     "permissions": [
@@ -13,8 +13,6 @@
         "https://www.linkedin.com/"
     ],
     "background": {
-        "scripts": [
-            "extension.js"
-        ]
+        "service_worker": "extension.js"
     }
 }
