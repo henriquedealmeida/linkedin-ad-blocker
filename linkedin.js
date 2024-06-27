@@ -15,7 +15,7 @@ function removedAds() {
                 }
             }
 
-            card.setAttribute("style", "display:none");
+            card.setAttribute("style", "display: none !important;");
         }
     }
 }
